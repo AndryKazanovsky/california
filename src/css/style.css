@@ -1,0 +1,197 @@
+$purple: #9e1a36;
+
+@font-face{
+  font-family: RobotoLight;
+  src:url(../fonts/Roboto-Light.ttf)
+}
+@font-face{
+  font-family: RobotoSlabLight;
+  src:url(../fonts/RobotoSlab-Light.ttf)
+}
+@font-face{
+  font-family: RobotoMedium;
+  src:url(../fonts/Roboto-Medium.ttf)
+}
+
+@import 'header';
+@import 'contacts';
+@import 'dreaming';
+@import 'residents';
+@import 'welcome';
+@import 'education';
+@import 'join';
+
+
+/* 0.0 General
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+:root{
+  --fontSize: 1rem;
+  --fullWidth: 100%;
+}
+
+@custom-media --small-viewport (max-width: 30em);
+@custom-media --large-viewport (min-width: 75em);
+
+@custom-selector --grid .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12
+
+/* 1.0 Reset
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: RobotoLight;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+  max-width: 1440px;;
+}
+section {
+  padding-bottom: 80px;
+  align-items: center;
+}
+header, main, section {
+  margin: 0 auto;
+}
+a {
+  background-color: transparent;
+  color: inherit;
+  text-decoration: none;
+}
+
+a:matches(:hover, :any-link) {
+  outline: 0;
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+button, input, optgroup, select, textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+button {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled], html input[disabled] {
+  cursor: default;
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input {
+  line-height: normal;
+  outline: none;
+}
+
+textarea {
+  overflow: auto;
+  outline: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
+}
+h3 {
+  font-family: RobotoSlabLight;
+  color: #9e1a36;
+  font-size: 48px;
+  text-align: center;
+}
+h4 {
+  text-align: center;
+}
+b {
+  font-family: RobotoMedium;
+}
+.border-right {
+  border-right: 1px solid #dfdfdf
+}
+.border-left {
+  border-left: 1px solid #dfdfdf
+}
+.container {
+  max-width: 930px
+}
+.description {
+  font-size: 14px;
+  border-bottom: 1px solid #ebebeb;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  color: #b1b1b1;
+}
+footer {
+  max-width: 100%;
+  background: black;
+  color: white;
+  height: 100px;
+    div {
+      max-width: 1440px;
+      margin: auto;
+      padding: 20px 130px;
+      span {
+        display: block
+      }
+    }
+}
+@media (max-width: 900px) {
+  section {
+    padding: 20px;
+  }
+  footer div{
+    padding: 30px ;
+  }
+  h3 {
+    font-size: 32px;
+  }
+
+}
+
+
